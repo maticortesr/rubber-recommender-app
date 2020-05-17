@@ -8,9 +8,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
 import Select from 'react-select';
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('UA-120795861-3');
 
 const App = () => {
   const [data, setData] = useState([])
@@ -63,7 +60,7 @@ const App = () => {
         </Row>
       </Container>
 
-      <Navbar fixed="bottom" expand="lg" variant="light" bg="light"  >
+      <Navbar fixed="bottom" expand="sm" variant="light" bg="light"  >
         <Container fluid>
           <Navbar.Brand >Data Source: Revspin.net</Navbar.Brand>
         </Container>
