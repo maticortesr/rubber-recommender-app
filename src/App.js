@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Navbar from 'react-bootstrap/Navbar'
 import Select from 'react-select';
 
 const App = () => {
@@ -53,6 +52,10 @@ const App = () => {
 
             <DisplayPrediction data={data} columns={columns} />
 
+            <Row style={{ paddingTop: 20,paddingBottom:20,  position:"absolute", bottom:0 }}>
+             <Col> Data Source: Revspin.net </Col> 
+            </Row>
+
           </Col>
 
           <Col style={{ backgroundColor: '#085aa1' }} ></Col>
@@ -60,11 +63,7 @@ const App = () => {
         </Row>
       </Container>
 
-      <Navbar fixed="bottom" expand="sm" variant="light" bg="light"  >
-        <Container fluid>
-          <Navbar.Brand >Data Source: Revspin.net</Navbar.Brand>
-        </Container>
-      </Navbar>
+
     </div>
   )
 }
@@ -96,9 +95,12 @@ const DisplayPrediction = (props) => {
             })}
           </tbody>
         </Table>
+        
 
       </Col>
     </Row>
+
+    
 
     )
 }
