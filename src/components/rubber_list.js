@@ -1,5 +1,3 @@
-import React from 'react'
-
 const rubber_list = [
 "Donic Bluestorm Z1 Turbo"
 ,"Tibhar Aurus TC-1"
